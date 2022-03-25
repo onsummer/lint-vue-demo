@@ -1,0 +1,16 @@
+node_modules
+
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# 除了 .env 其它所有模式的环境文件都忽略
+.env.*
+
+dist
+
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*

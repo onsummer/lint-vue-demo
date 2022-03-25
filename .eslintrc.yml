@@ -1,0 +1,36 @@
+env:
+  browser: true
+  es2021: true
+parser: vue-eslint-parser
+extends:
+  - eslint:recommended
+  - plugin:vue/vue3-recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:prettier/recommended
+  - plugin:css-modules/recommended
+  - plugin:css/recommended
+parserOptions:
+  ecmaVersion: latest
+  parser: '@typescript-eslint/parser'
+  sourceType: module
+plugins:
+  - vue
+  - '@typescript-eslint'
+  - prettier
+  - css
+  - 'css-modules'
+rules:
+  indent:
+    - error
+    - 2
+  linebreak-style:
+    - error
+    - windows
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - never
+  prettier/prettier:
+    - error
